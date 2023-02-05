@@ -9,28 +9,42 @@
 
     --light-theme-primary-color: #0a2a96;
     --light-theme-secundary-color: #03c4dd;
+    --dark-theme-primary-color: #071d5f;
+    --dark-theme-secundary-color: #030616;
 }
 
-.gradient {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
     height: 100vh;
-    
-    color: #ffffff;
+
     font-size: 50px;
-    
+    color: #ffffff;
+
+}
+
+.dark-gradient {    
+    background: linear-gradient(to top right, var(--dark-theme-secundary-color), var(--dark-theme-primary-color)); 
+    -webkit-background: linear-gradient(to top right, var(--dark-theme-secundary-color), var(--dark-theme-primary-color));
     background-size: 500% 500%;
-    background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color)); 
     -webkit-background-size: 500% 500%;
+    
+    animation: gradient-effect 8s ease infinite;
+}
+
+.light-gradient {
+    background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color)); 
     -webkit-background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color));
+    background-size: 500% 500%;
+    -webkit-background-size: 500% 500%;
 
     animation: gradient-effect 8s ease infinite;
 }
 
-.gradient p {
+.container p {
     display: none;
 }
 
