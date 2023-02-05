@@ -23,8 +23,11 @@
     background: linear-gradient(to top right, #03c4dd, #0a2a96); 
     -webkit-background-size: 500% 500%;
     -webkit-background: linear-gradient(to top right, #03c4dd, #0a2a96);
+
+    animation: gradient-effect 8s ease infinite;
 }
 
 .gradient p {
     display: none;
 }
+
