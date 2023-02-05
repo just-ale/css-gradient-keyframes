@@ -6,6 +6,9 @@
 
 :root {
     font-family: "Anton", sans-serif;
+
+    --light-theme-primary-color: #0a2a96;
+    --light-theme-secundary-color: #03c4dd;
 }
 
 .gradient {
@@ -20,9 +23,9 @@
     font-size: 50px;
     
     background-size: 500% 500%;
-    background: linear-gradient(to top right, #03c4dd, #0a2a96); 
+    background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color)); 
     -webkit-background-size: 500% 500%;
-    -webkit-background: linear-gradient(to top right, #03c4dd, #0a2a96);
+    -webkit-background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color));
 
     animation: gradient-effect 8s ease infinite;
 }
