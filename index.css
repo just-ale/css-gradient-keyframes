@@ -7,10 +7,13 @@
 :root {
     font-family: "Anton", sans-serif;
 
-    --light-theme-primary-color: #0a2a96;
-    --light-theme-secundary-color: #03c4dd;
-    --dark-theme-primary-color: #071d5f;
-    --dark-theme-secundary-color: #030616;
+    --background__dark-gradient: linear-gradient(
+        45deg, #000000, #221133
+    );
+
+    --background__light-gradient: linear-gradient(
+        45deg, #c89ef1, #8a2fe6
+    );
 }
 
 .container {
@@ -27,8 +30,8 @@
 }
 
 .dark-gradient {    
-    background: linear-gradient(to top right, var(--dark-theme-secundary-color), var(--dark-theme-primary-color)); 
-    -webkit-background: linear-gradient(to top right, var(--dark-theme-secundary-color), var(--dark-theme-primary-color));
+    background: var(--background__dark-gradient); 
+    -webkit-background: var(--background__dark-gradient);
     background-size: 500% 500%;
     -webkit-background-size: 500% 500%;
     
@@ -36,8 +39,8 @@
 }
 
 .light-gradient {
-    background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color)); 
-    -webkit-background: linear-gradient(to top right, var(--light-theme-secundary-color), var(--light-theme-primary-color));
+    background: var(--background__light-gradient); 
+    -webkit-background: var(--background__light-gradient);
     background-size: 500% 500%;
     -webkit-background-size: 500% 500%;
 
