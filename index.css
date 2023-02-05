@@ -14,6 +14,20 @@
     --background__light-gradient: linear-gradient(
         45deg, #c89ef1, #8a2fe6
     );
+
+    --dark-text-gradient: linear-gradient(
+        to top,
+        #9572fc,
+        #43e7ad,
+        #e2d448
+    );
+
+    --light-text-gradient: linear-gradient(
+        to bottom,
+        #360068,
+        #6508b1,
+        #da11c9
+    );
 }
 
 .container {
@@ -47,7 +61,19 @@
     animation: gradient-effect 8s ease infinite;
 }
 
-.container p {
-    display: none;
+.container .dark-text {
+    background-image: var(--dark-text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.container .light-text {
+    background-image: var(--light-text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
 }
 
